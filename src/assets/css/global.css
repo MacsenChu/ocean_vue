@@ -1,0 +1,135 @@
+/* 全局样式表 */
+@import url("foundation.css");
+
+html, body, #app {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 22px;
+    color: #333;
+    -webkit-text-size-adjust: none;
+}
+
+body * {
+    text-shadow: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
+    color: #330;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td, textarea, input {
+    font-family: 'Open Sans';
+    font-weight: normal;
+}
+
+h1, h2, h3 {
+    font-size: 18px;
+}
+
+h5, h6 {
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+a, a:link, a:active, a:visited, a:hover {
+    color: #233241;
+    text-decoration: underline;
+}
+
+pre {
+    font-size: 12px;
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+i {
+    background: url("../font/icons.svg") no-repeat left top;
+    display: inline-block;
+    position: relative;
+}
+
+i.i-phone { width:72px; height:72px; background-position: 0px 0px; top: 50%; left:50%; margin: -36px 0px 0px -65px; }
+i.i-flexible { width:72px; height:72px; background-position: -72px 0px; top: 50%; left:50%; margin: -36px 0px 0px -65px; }
+i.i-neat { width:72px; height:72px; background-position: -144px 0px; top: 50%; left:50%; margin: -36px 0px 0px -65px; }
+
+i.i-home { width:72px; height:72px; background-position: 0px -72px; top: 50%; left:50%; margin: -36px 0px 0px -65px; }
+i.i-about { width:72px; height:72px; background-position: -72px -72px; top: 50%; left:50%; margin: -36px 0px 0px -65px; }
+i.i-blog { width:72px; height:72px; background-position: -144px -72px; top: 50%; left:50%; margin: -33px 0px 0px -65px; }
+i.i-shortcodes { width:72px; height:72px; background-position: 0px -144px; top: 50%; left:50%; margin: -36px 0px 0px -65px; }
+i.i-gallery { width:72px; height:72px; background-position: -72px -144px; top: 50%; left:50%; margin: -36px 0px 0px -65px; }
+i.i-contact { width:72px; height:72px; background-position: -144px -144px; top: 50%; left:50%; margin: -36px 0px 0px -65px; }
+
+i.i-home.i-small { width:19px; height:19px; background-position: -9px -225px; top: 3px; }
+i.i-about.i-small { width:19px; height:19px; background-position: -49px -225px; top: 3px; left: 3px; }
+i.i-blog.i-small{ width:19px; height:19px; background-position: -82px -225px; top: 3px; }
+i.i-shortcodes.i-small { width:20px; height:19px; background-position: -116px -225px; top: 3px; }
+i.i-gallery.i-small { width:20px; height:19px; background-position: -152px -225px; top: 3px; }
+i.i-contact.i-small { width:20px; height:19px; background-position: -188px -225px; top: 3px; }
+
+i.i-comments.i-small { width:16px; height:16px; background-position: -28px -388px; top: 3px; margin:0px 2px 0px 5px; }
+i.i-author.i-small { width:16px; height:16px; background-position: -100px -388px; top: 3px; margin:0px 2px 0px 5px; }
+i.i-calendar.i-small { width:16px; height:16px; background-position: -172px -388px; top: 3px; margin:0px 2px 0px 5px; }
+
+i.i-small { margin: 0px 10px 0px 0px; left: 0px; }
+
+.i-pane {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    float: left;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.i-pane.i-blue {
+    background-color: #587eac;
+}
+
+.i-pane.i-green {
+    background-color: #9eb74e;
+}
+
+.i-pane.i-orange {
+    background-color: #e0af50;
+}
+
+.i-pane.i-red {
+    background-color: #ff7a73;
+}
+
+/** Color socials ICONS **/
+.socialMedia a.ico-facebook { background-position: -16px -436px; }
+.socialMedia a.ico-twitter { background-position: -43px -436px; }
+.socialMedia a.ico-linkedin { background-position: -68px -436px; }
+.socialMedia a.ico-gplus { background-position: -94px -436px; }
+.socialMedia a.ico-youtube { background-position: -120px -436px; }
+.socialMedia a.ico-tumblr { background-position: -146px -436px; }
+.socialMedia a.ico-pinterest { background-position: -172px -436px; }
+
+.socialMedia.scl-grey a.ico-facebook { background-position: -16px -465px; }
+.socialMedia.scl-grey a.ico-twitter { background-position: -43px -465px; }
+.socialMedia.scl-grey a.ico-linkedin { background-position: -68px -465px; }
+.socialMedia.scl-grey a.ico-gplus { background-position: -94px -465px; }
+.socialMedia.scl-grey a.ico-youtube { background-position: -120px -465px; }
+.socialMedia.scl-grey a.ico-tumblr { background-position: -146px -465px; }
+.socialMedia.scl-grey a.ico-pinterest { background-position: -172px -465px; }
