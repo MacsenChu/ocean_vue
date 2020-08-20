@@ -6,7 +6,8 @@ import {
   Carousel,
   CarouselItem,
   Message,
-  Image
+  Image,
+  Progress
 } from 'element-ui'
 
 Vue.use(Button)
@@ -15,5 +16,6 @@ Vue.use(Header)
 Vue.use(Carousel)
 Vue.use(CarouselItem)
 Vue.use(Image)
+Vue.use(Progress)
 
 Vue.prototype.$message = Message

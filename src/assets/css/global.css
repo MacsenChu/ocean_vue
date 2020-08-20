@@ -133,3 +133,19 @@ i.i-small { margin: 0px 10px 0px 0px; left: 0px; }
 .socialMedia.scl-grey a.ico-youtube { background-position: -120px -465px; }
 .socialMedia.scl-grey a.ico-tumblr { background-position: -146px -465px; }
 .socialMedia.scl-grey a.ico-pinterest { background-position: -172px -465px; }
+
+.c-blue {
+    color: #587eac;
+}
+
+.c-green {
+    color: #9eb74e;
+}
+
+.c-orange {
+    color: #e0af50;
+}
+
+.c-red {
+    color: #ff7a73;
+}

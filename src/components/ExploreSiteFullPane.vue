@@ -1,41 +1,46 @@
 <template>
-  <div class="exploreSiteFullPane">
-    <a href="#" class="explorePane active">
+  <div>
+    <div class="block">
+      Explore our site
+    </div>
+    <div class="exploreSiteFullPane">
+      <a href="#" class="explorePane active">
         <span class="i-pane i-blue">
           <i class="i-home"></i>
         </span>
-      <h4>Home</h4>
-    </a>
-    <a href="#" class="explorePane middle">
+        <h4>Home</h4>
+      </a>
+      <a href="#" class="explorePane middle">
         <span class="i-pane i-blue">
           <i class="i-about"></i>
         </span>
-      <h4>About</h4>
-    </a>
-    <a href="#" class="explorePane">
+        <h4>About</h4>
+      </a>
+      <a href="#" class="explorePane">
         <span class="i-pane i-blue">
           <i class="i-blog"></i>
         </span>
-      <h4>Blog</h4>
-    </a>
-    <a href="#" class="explorePane">
+        <h4>Blog</h4>
+      </a>
+      <a href="#" class="explorePane">
       <span class="i-pane i-blue">
         <i class="i-gallery"></i>
       </span>
-      <h4>Gallery</h4>
-    </a>
-    <a href="#" class="explorePane middle">
+        <h4>Gallery</h4>
+      </a>
+      <a href="#" class="explorePane middle">
         <span class="i-pane i-blue">
           <i class="i-shortcodes"></i>
         </span>
-      <h4>Shortcodes</h4>
-    </a>
-    <a href="#" class="explorePane">
+        <h4>Shortcodes</h4>
+      </a>
+      <a href="#" class="explorePane">
         <span class="i-pane i-blue">
           <i class="i-contact"></i>
         </span>
-      <h4>Contact</h4>
-    </a>
+        <h4>Contact</h4>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -46,6 +51,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .block {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #f1f2f4;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ccd2d8;
+    border-bottom: 1px solid #ccd2d8;
+    color: #233241;
+  }
   .exploreSiteFullPane {
     padding: 5px;
 

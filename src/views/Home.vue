@@ -35,11 +35,8 @@
         </p>
       </div>
     </div>
-    <div class="block">
-      Explore our site
-    </div>
     <ExploreSiteFullPane />
-    <Footer />
+    <SocialLink />
   </div>
 </template>
 
@@ -47,14 +44,14 @@
 import axios from 'axios'
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import ExploreSiteFullPane from '../components/ExploreSiteFullPane'
-import Footer from '../components/Footer'
+import SocialLink from '../components/SocialLink'
 export default {
   name: 'Home',
   components: {
     Swiper,
     SwiperSlide,
     ExploreSiteFullPane,
-    Footer
+    SocialLink
   },
   data () {
     return {
@@ -115,35 +112,8 @@ export default {
         p {
           color: #979797;
           font-size: 13px;
-
-          .c-blue {
-            color: #587eac;
-          }
-
-          .c-green {
-            color: #9eb74e;
-          }
-
-          .c-orange {
-            color: #e0af50;
-          }
-
-          .c-red {
-            color: #ff7a73;
-          }
         }
       }
-    }
-
-    .block {
-      font-size: 14px;
-      font-weight: bold;
-      background-color: #f1f2f4;
-      text-align: center;
-      padding: 15px;
-      border-top: 1px solid #ccd2d8;
-      border-bottom: 1px solid #ccd2d8;
-      color: #233241;
     }
   }
 </style>
