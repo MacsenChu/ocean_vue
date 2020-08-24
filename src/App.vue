@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Nav />
+    <Nav :name="this.$route.name" />
     <router-view />
   </div>
 </template>
@@ -13,10 +13,15 @@ export default {
   },
   data () {
     return {
+      show: true
     }
+  },
+  created () {
   }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+  #app {
+  }
 </style>

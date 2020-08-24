@@ -35,8 +35,8 @@
         </p>
       </div>
     </div>
-    <ExploreSiteFullPane />
-    <SocialLink />
+    <ExploreSiteFullPane  :name="this.$route.name" />
+    <SocialLink :dark="true" />
   </div>
 </template>
 

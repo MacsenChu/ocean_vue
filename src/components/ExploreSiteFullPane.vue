@@ -4,49 +4,45 @@
       Explore our site
     </div>
     <div class="exploreSiteFullPane">
-      <a href="#" class="explorePane active">
+      <a href="#"
+         :class="['explorePane', name === site.name ? 'active' : '',index === 1 || index === 4 ? 'middle' : '']"
+         v-for="(site, index) in siteList" :key="site.id">
         <span class="i-pane i-blue">
-          <i class="i-home"></i>
+          <i :class="site.icon"></i>
         </span>
-        <h4>Home</h4>
-      </a>
-      <a href="#" class="explorePane middle">
-        <span class="i-pane i-blue">
-          <i class="i-about"></i>
-        </span>
-        <h4>About</h4>
-      </a>
-      <a href="#" class="explorePane">
-        <span class="i-pane i-blue">
-          <i class="i-blog"></i>
-        </span>
-        <h4>Blog</h4>
-      </a>
-      <a href="#" class="explorePane">
-      <span class="i-pane i-blue">
-        <i class="i-gallery"></i>
-      </span>
-        <h4>Gallery</h4>
-      </a>
-      <a href="#" class="explorePane middle">
-        <span class="i-pane i-blue">
-          <i class="i-shortcodes"></i>
-        </span>
-        <h4>Shortcodes</h4>
-      </a>
-      <a href="#" class="explorePane">
-        <span class="i-pane i-blue">
-          <i class="i-contact"></i>
-        </span>
-        <h4>Contact</h4>
+        <h4>{{ site.name }}</h4>
       </a>
     </div>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-  name: 'exploreSiteFullPane'
+  name: 'exploreSiteFullPane',
+  props: ['name'],
+  data () {
+    return {
+      siteList: []
+    }
+  },
+  created () {
+    this.getSiteList()
+  },
+  methods: {
+    async getSiteList () {
+      try {
+        const res = await axios.get('/api/sites')
+        if (res.status !== 200) {
+          this.$message.error('site列表获取失败')
+        } else {
+          this.siteList = res.data
+        }
+      } catch (e) {
+        console.log(e)
+      }
+    }
+  }
 }
 </script>
 

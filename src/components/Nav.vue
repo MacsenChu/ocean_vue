@@ -1,23 +1,29 @@
 <template>
   <el-container>
     <el-header class="header" height="51px">
-      <a href="#menu"></a>
+      <a href="void:javascript(0)"></a>
       <span id="Logo" class="svg">
         <img src="../assets/images/logo.svg" />
       </span>
       <a class="backBtn" href="javascript:history.back();"></a>
     </el-header>
     <el-header class="subHeader" height="40px">
-      <i class="i-home i-small"></i>Welcome friend!
+      <i :class="['i-' + name, 'i-small']"></i>
+      <span v-if="name === 'Home'">Welcome friend!</span>
+      <span v-else>Ocean / {{ name }}</span>
     </el-header>
   </el-container>
 </template>
 
 <script>
 export default {
+  props: ['name'],
+  name: 'Nav',
   data () {
     return {
     }
+  },
+  created () {
   }
 }
 </script>
@@ -49,7 +55,7 @@ export default {
           height: 40px;
           position: absolute;
           top: 5px;
-          right: 0px;
+          right: 0;
           left: inherit;
         }
       }

@@ -27,7 +27,7 @@
         <div class="o-person-details"></div>
       </div>
     </div>
-    <ExploreSiteFullPane/>
+    <ExploreSiteFullPane :name="this.$route.name" />
   </div>
 </template>
 

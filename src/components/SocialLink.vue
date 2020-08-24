@@ -1,5 +1,5 @@
 <template>
-  <div class="socialMedia scl-grey">
+  <div :class="['socialMedia', dark ? 'scl-grey' : '']">
     <a href="#" class="ico-facebook" title="facebook">facebook</a>
     <a href="#" class="ico-twitter" title="twittertwitter">twitter</a>
     <a href="#" class="ico-linkedin" title="linkedin">linkedin</a>
@@ -12,7 +12,8 @@
 
 <script>
 export default {
-  name: 'SocialLink'
+  name: 'SocialLink',
+  props: ['dark']
 }
 </script>
 
