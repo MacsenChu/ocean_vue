@@ -4,14 +4,14 @@
       Explore our site
     </div>
     <div class="exploreSiteFullPane">
-      <a href="#"
+      <router-link :to="site.name.toLowerCase()"
          :class="['explorePane', name === site.name ? 'active' : '',index === 1 || index === 4 ? 'middle' : '']"
          v-for="(site, index) in siteList" :key="site.id">
         <span class="i-pane i-blue">
           <i :class="site.icon"></i>
         </span>
         <h4>{{ site.name }}</h4>
-      </a>
+      </router-link>
     </div>
   </div>
 </template>

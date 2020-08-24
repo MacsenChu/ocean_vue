@@ -2,29 +2,31 @@
   <div>
     <div id="content">
       <div class="o-team">
-        <div class="o-team-person">
-          <img src="../assets/images/team/1-th.jpg"/>
-          <h4>John Doe</h4>
+        <div class="o-team-person" v-for="item in person" :key="item.id" @click="showContent(item.id)">
+          <img :src="item.avatar"/>
+          <h4>{{ item.name }}</h4>
           <div class="h-line50"></div>
-          <p><span class="c-red">Lorem ipsum</span> is simply dummy text</p>
-        </div>
-
-        <div class="o-team-person">
-          <img src="../assets/images/team/2-th.jpg"/>
-          <h4>John Doe</h4>
-          <div class="h-line50"></div>
-          <p><span class="c-red">Lorem ipsum</span> is simply dummy text</p>
-        </div>
-
-        <div class="o-team-person">
-          <img src="../assets/images/team/3-th.jpg"/>
-          <h4>John Doe</h4>
-          <div class="h-line50"></div>
-          <p><span class="c-red">Lorem ipsum</span> is simply dummy text</p>
+          <p v-html="item.desc"></p>
         </div>
       </div>
-      <div id="o-person-details-pane">
-        <div class="o-person-details"></div>
+      <div v-for="item in person" :key="item.id + person.length">
+        <el-collapse-transition>
+          <div v-if="item.show" class="o-person-content">
+            <img :src="item.img" />
+            <h4>{{ item.name }}</h4>
+            <p v-html="item.content"></p>
+            <div class="socialMedia">
+              <SocialLink />
+            </div>
+            <h3 class="a-skills">Skills</h3>
+            <div class="chart">
+              <span v-for="(skill, index) in item.skills" :key="index">
+                <el-progress type="circle" :percentage="skill.percentage" :color="skill.color" :stroke-width="8"></el-progress>
+                <h3>{{ skill.name }}</h3>
+              </span>
+            </div>
+          </div>
+        </el-collapse-transition>
       </div>
     </div>
     <ExploreSiteFullPane :name="this.$route.name" />
@@ -33,13 +35,39 @@
 
 <script>
 import ExploreSiteFullPane from '../components/ExploreSiteFullPane'
-
+import SocialLink from '../components/SocialLink'
+import axios from 'axios'
 export default {
   components: {
-    ExploreSiteFullPane
+    ExploreSiteFullPane,
+    SocialLink
   },
   data () {
-    return {}
+    return {
+      person: []
+    }
+  },
+  created () {
+    this.getPersonInfo()
+  },
+  methods: {
+    async getPersonInfo () {
+      const res = await axios.get('/api/person')
+      if (res.status !== 200) {
+        this.$message.error('获取person列表失败')
+      } else {
+        this.person = res.data
+      }
+    },
+    showContent (id) {
+      this.person.forEach(_ => {
+        if (_.id === id) {
+          _.show = !_.show
+        } else {
+          _.show = false
+        }
+      })
+    }
   }
 }
 </script>
@@ -98,72 +126,35 @@ export default {
           margin-top: 0px;
           line-height: 1;
         }
-
-        .o-person-content {
-          display: none;
-        }
       }
     }
 
-    .o-person-details {
+    .o-person-content {
       img {
         width: 100%;
       }
-
-      h4 {
-        font-size: 16px;
-        color: #0e1419;
-        margin: 10px 0px 20px 0px;
-      }
-
-      p {
-        font-size: 12px;
-        color: #949494;
-        margin-top: 0px;
-        line-height: 1;
-      }
-
       .a-skills {
-        margin-bottom: 0px;
+        margin-bottom: 0;
         border-bottom: 1px solid #DDD;
         padding-bottom: 10px;
       }
-    }
-    .chart {
-      position: relative;
-      display: inline-block;
-      width: 110px;
-      height: 110px;
-      margin-top: 20px;
-      margin-bottom: 50px;
-      text-align: center;
-
-      canvas {
-        position: absolute;
-        top: 0;
-        left: 0;
+      .chart {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .el-progress.el-progress--circle {
+          margin: 18px 2px 0 2px;
+        }
+        /deep/ .el-progress-circle {
+          height: 85px!important;
+          width: 85px!important;
+        }
+        span {
+          h3 {
+            text-align: center;
+          }
+        }
       }
-    }
-
-    .percent {
-      display: inline-block;
-      font-size: 30px;
-      color: #777;
-      z-index: 2;
-    }
-
-    .percent:after {
-      content: '%';
-      margin-left: 0.1em;
-      font-size: .8em;
-    }
-
-    .angular {
-      margin-top: 100px;
-    }
-
-    .angular .chart {
-      margin-top: 0;
     }
   }
 </style>

@@ -3,18 +3,18 @@
     <div id="content">
       <h3 class="title">Charts</h3>
       <div class="chart">
-      <span>
-        <el-progress type="circle" :percentage="86" color="#9eb74e" :stroke-width="5"></el-progress>
-        <h3>HTML</h3>
-      </span>
         <span>
-        <el-progress type="circle" :percentage="56" color="#e0af50" :stroke-width="5"></el-progress>
-        <h3>CSS</h3>
-      </span>
-        <span>
-        <el-progress type="circle" :percentage="36" color="#ff7a73" :stroke-width="5"></el-progress>
-        <h3>jQuery</h3>
-      </span>
+          <el-progress type="circle" :percentage="86" color="#9eb74e" :stroke-width="5"></el-progress>
+          <h3>HTML</h3>
+        </span>
+          <span>
+          <el-progress type="circle" :percentage="56" color="#e0af50" :stroke-width="5"></el-progress>
+          <h3>CSS</h3>
+        </span>
+          <span>
+          <el-progress type="circle" :percentage="36" color="#ff7a73" :stroke-width="5"></el-progress>
+          <h3>jQuery</h3>
+        </span>
       </div>
       <hr>
       <h3 class="title">Buttons</h3>

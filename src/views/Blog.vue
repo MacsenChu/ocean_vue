@@ -1,6 +1,6 @@
 <template>
   <div id="content">
-    <article v-for="article in articleList" :key="article.id">
+    <article v-for="article in articleList" :key="article.id" @click="toArticleDetailById(article.id)">
       <img :src="article.image" />
       <h2><a href="#">{{ article.title }}</a></h2>
       <p v-html="article.desc">
@@ -33,6 +33,9 @@ export default {
       } else {
         this.articleList = res.data
       }
+    },
+    toArticleDetailById (id) {
+      this.$router.push(`/blog/${id}`)
     }
   }
 }
@@ -46,6 +49,7 @@ export default {
     padding-top:30px;
     margin-bottom:30px;
     border-top:1px solid #eee;
+    cursor: pointer;
     &:first-child {
       border-top: 0;
       margin-top: 0;
@@ -59,10 +63,10 @@ export default {
       text-decoration: none;
     }
     div.a-meta {
-      font-size:11px;
+      font-size: 11px;
     }
     div.a-meta > a {
-      text-decoration:none;
+      text-decoration: none;
     }
     img {
       width:100%;

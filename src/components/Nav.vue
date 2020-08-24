@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <el-header class="header" height="51px">
-      <a href="void:javascript(0)"></a>
+      <a href="void:javascript(0)" @click="showSideBar"></a>
       <span id="Logo" class="svg">
         <img src="../assets/images/logo.svg" />
       </span>
@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 export default {
   props: ['name'],
   name: 'Nav',
@@ -24,6 +25,14 @@ export default {
     }
   },
   created () {
+  },
+  methods: {
+    ...mapMutations({
+      switchSideBar: 'header/switchSideBar'
+    }),
+    showSideBar () {
+      this.switchSideBar(this.drawer)
+    }
   }
 }
 </script>
