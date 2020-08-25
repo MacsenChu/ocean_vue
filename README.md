@@ -33,7 +33,7 @@ cd ocean_vue
 npm install
 
 # 运行
-npm run dev
+npm run serve
 ```
 
 
