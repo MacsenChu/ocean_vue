@@ -25,7 +25,7 @@
         <el-button type="warning" size="mini">Button</el-button>
       </div>
       <h4 class="title">Big buttons</h4>
-      <div class="btn">
+      <div class="buttons">
         <el-button type="primary">Button</el-button>
         <el-button type="danger">Button</el-button>
         <el-button type="success">Button</el-button>
@@ -126,6 +126,11 @@ export default {
     }
     .btn {
       height: 42px;
+    }
+    .buttons {
+      /deep/ .el-button {
+        margin: 8px 10px 0 0 !important;
+      }
     }
     .notifications {
       .el-alert {

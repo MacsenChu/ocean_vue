@@ -2,7 +2,7 @@
   <div>
     <div id="content">
       <div class="o-team">
-        <div class="o-team-person" v-for="item in person" :key="item.id" @click="showContent(item.id)">
+        <div :class="['o-team-person', opacity === true ? item.show === true ? '' : 'opacity50' : '']" v-for="item in person" :key="item.id" @click="showContent(item.id)">
           <img :src="item.avatar"/>
           <h4>{{ item.name }}</h4>
           <div class="h-line50"></div>
@@ -44,7 +44,8 @@ export default {
   },
   data () {
     return {
-      person: []
+      person: [],
+      opacity: false
     }
   },
   created () {
@@ -60,6 +61,7 @@ export default {
       }
     },
     showContent (id) {
+      this.opacity = true
       this.person.forEach(_ => {
         if (_.id === id) {
           _.show = !_.show
@@ -67,6 +69,9 @@ export default {
           _.show = false
         }
       })
+      if (!this.person.some(_ => _.show === true)) {
+        this.opacity = false
+      }
     }
   }
 }

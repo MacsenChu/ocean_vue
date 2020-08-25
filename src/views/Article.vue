@@ -90,6 +90,12 @@ export default {
       text-decoration: none;
     }
 
+    article {
+      img {
+        width: 100%;
+      }
+    }
+
     .article-comments {
       & >  ul {
         padding: 5px;
