@@ -12,7 +12,7 @@
 
 然后，我先打个广告
 
-![WeChat](https://github.com/MacsenChu/ocean_vue/blob/master/image/WeChat.png)
+![WeChat](http://123.56.132.142/wp-content/uploads/2020/08/WeChat.png)
 
 关注我一下吧，我有时间的话，会在上面~~吹牛逼~~写一些技术方面的文章
 
@@ -46,19 +46,19 @@ npm run dev
 
 Home
 
-![index](https://github.com/MacsenChu/ocean_vue/blob/master/image/index.png)
+![index](http://123.56.132.142/wp-content/uploads/2020/08/index.png)
 
-![index2](https://github.com/MacsenChu/ocean_vue/blob/master/image/index2.png)
+![index2](http://123.56.132.142/wp-content/uploads/2020/08/index2.png)
 
 SideBar
 
-![sidebar](https://github.com/MacsenChu/ocean_vue/blob/master/image/sidebar.png)
+![sidebar](http://123.56.132.142/wp-content/uploads/2020/08/sidebar.png)
 
 About
 
-![about](https://github.com/MacsenChu/ocean_vue/blob/master/image/about.png)
+![about](http://123.56.132.142/wp-content/uploads/2020/08/about.png)
 
-![about2](https://github.com/MacsenChu/ocean_vue/blob/master/image/about2.png)
+![about2](http://123.56.132.142/wp-content/uploads/2020/08/about2.png)
 
 这个弹出是一个动画效果
 
@@ -66,27 +66,27 @@ About
 
 Blog
 
-![blog](https://github.com/MacsenChu/ocean_vue/blob/master/image/blog.png)
+![blog](http://123.56.132.142/wp-content/uploads/2020/08/blog.png)
 
 点击进入文章详情页
 
-![article](https://github.com/MacsenChu/ocean_vue/blob/master/image/article.png)
+![article](http://123.56.132.142/wp-content/uploads/2020/08/article.png)
 
-![article1](https://github.com/MacsenChu/ocean_vue/blob/master/image/article1.png)
+![article1](http://123.56.132.142/wp-content/uploads/2020/08/article1.png)
 
 gallery
 
-![gallery](https://github.com/MacsenChu/ocean_vue/blob/master/image/gallery.png)
+![gallery](http://123.56.132.142/wp-content/uploads/2020/08/gallery.png)
 
 shortCode
 
-![shortCode](https://github.com/MacsenChu/ocean_vue/blob/master/image/shortCode.png)
+![shortCode](http://123.56.132.142/wp-content/uploads/2020/08/shortCode.png)
 
-![shortCode1](https://github.com/MacsenChu/ocean_vue/blob/master/image/shortCode1.png)
+![shortCode1](http://123.56.132.142/wp-content/uploads/2020/08/shortCode1.png)
 
 contact
 
-![contact](https://github.com/MacsenChu/ocean_vue/blob/master/image/contact.png)
+![contact](http://123.56.132.142/wp-content/uploads/2020/08/contact.png)
 
 
 
@@ -119,7 +119,7 @@ contact
 
 这个轮播图是Vue-awesome-swiper
 
-![swiper](https://github.com/MacsenChu/ocean_vue/blob/master/image/swiper.png)
+![swiper](http://123.56.132.142/wp-content/uploads/2020/08/swiper.png)
 
 那么老师这时候问你了，这个东西怎么实现的
 
@@ -235,7 +235,7 @@ Mock.mock('/api/carousels', 'get', carousels)
 
 ### ExploreSiteFullPane
 
-![ExploreSiteFullPane](https://github.com/MacsenChu/ocean_vue/blob/master/image/ExploreSiteFullPane.png)
+![ExploreSiteFullPane](http://123.56.132.142/wp-content/uploads/2020/08/ExploreSiteFullPane.png)
 
 这个封装需要复用，所以封装成了一个组件
 
@@ -300,7 +300,7 @@ export default {
 
 ### Nav
 
-![nav](https://github.com/MacsenChu/ocean_vue/blob/master/image/nav.png)
+![nav](http://123.56.132.142/wp-content/uploads/2020/08/nav.png)
 
 跟刚才那个一样，这个也是根据路由动态显示不一样的字，需要父组件传递过来值，但这个是根节点传过来的……
 
@@ -332,7 +332,7 @@ App.vue
 
 sidebar弹出效果
 
-![sidebar](https://github.com/MacsenChu/ocean_vue/blob/master/image/sidebar.png)
+![sidebar](http://123.56.132.142/wp-content/uploads/2020/08/sidebar.png)
 
 这个是element-ui的一个抽屉效果
 
@@ -491,11 +491,11 @@ drawer变量控制sidebar是否显示，actions里是异步的函数，所以用
 
 ### About
 
-![about-avatar](https://github.com/MacsenChu/ocean_vue/blob/master/image/about-avatar.png)
+![about-avatar](http://123.56.132.142/wp-content/uploads/2020/08/about-avatar.png)
 
 点击这几个小人头下面会弹出来动画
 
-![about-avatar2](https://github.com/MacsenChu/ocean_vue/blob/master/image/about-avatar2.png)
+![about-avatar2](http://123.56.132.142/wp-content/uploads/2020/08/about-avatar2.png)
 
 About.vue
 
@@ -749,9 +749,9 @@ showContent (id) {
 
 文章详情页这里，下面那个留言板，也是一个抽出来的组件，因为Contact页面也得用
 
-![article-message](https://github.com/MacsenChu/ocean_vue/blob/master/image/article-message.png)
+![article-message](http://123.56.132.142/wp-content/uploads/2020/08/article-message.png)
 
-![contact-message](https://github.com/MacsenChu/ocean_vue/blob/master/image/contact-message.png)
+![contact-message](http://123.56.132.142/wp-content/uploads/2020/08/contact-message.png)
 
 他们按钮的文字不一样，那么这时就用到了作用域插槽
 
@@ -934,7 +934,7 @@ methods: {
 
 ### SocialLink
 
-![socialLink](https://github.com/MacsenChu/ocean_vue/blob/master/image/socialLink.png)
+![socialLink](http://123.56.132.142/wp-content/uploads/2020/08/socialLink.png)
 
 这是父向子传值
 
@@ -974,7 +974,7 @@ export default {
 
 行了差不多了，如果还有问题的话，加我WeChat:  **Macsen_Chu**，或者关注我的公众号听我~~吹牛逼~~写一些技术方面的文章
 
-![WeChat](https://github.com/MacsenChu/ocean_vue/blob/master/image/WeChat.png)
+![WeChat](http://123.56.132.142/wp-content/uploads/2020/08/WeChat.png)
 
 
 
