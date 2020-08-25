@@ -12,7 +12,7 @@
 
 然后，我先打个广告
 
-![WeChat](https://s1.ax1x.com/2020/08/25/dcEDsO.png)
+![WeChat](https://s1.ax1x.com/2020/08/25/dceuid.png)
 
 关注我一下吧，我有时间的话，会在上面~~吹牛逼~~写一些技术方面的文章
 
@@ -974,7 +974,7 @@ export default {
 
 行了差不多了，如果还有问题的话，加我WeChat:  **Macsen_Chu**，或者关注我的公众号听我~~吹牛逼~~写一些技术方面的文章
 
-![WeChat](https://s1.ax1x.com/2020/08/25/dcEDsO.png)
+![WeChat](https://s1.ax1x.com/2020/08/25/dceuid.png)
 
 
 
