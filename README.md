@@ -12,7 +12,7 @@
 
 然后，我先打个广告
 
-![WeChat](http://123.56.132.142/wp-content/uploads/2020/08/WeChat.png)
+![WeChat](https://s1.ax1x.com/2020/08/25/dcEDsO.png)
 
 关注我一下吧，我有时间的话，会在上面~~吹牛逼~~写一些技术方面的文章
 
@@ -46,19 +46,19 @@ npm run serve
 
 Home
 
-![index](http://123.56.132.142/wp-content/uploads/2020/08/index.png)
+![index](https://s1.ax1x.com/2020/08/25/dcEJZ4.png)
 
-![index2](http://123.56.132.142/wp-content/uploads/2020/08/index2.png)
+![index2](https://s1.ax1x.com/2020/08/25/dcEto9.png)
 
 SideBar
 
-![sidebar](http://123.56.132.142/wp-content/uploads/2020/08/sidebar.png)
+![sidebar](https://s1.ax1x.com/2020/08/25/dcEdRx.png)
 
 About
 
-![about](http://123.56.132.142/wp-content/uploads/2020/08/about.png)
+![about](https://s1.ax1x.com/2020/08/25/dcEkM8.png)
 
-![about2](http://123.56.132.142/wp-content/uploads/2020/08/about2.png)
+![about2](https://s1.ax1x.com/2020/08/25/dcEAsS.png)
 
 这个弹出是一个动画效果
 
@@ -66,27 +66,27 @@ About
 
 Blog
 
-![blog](http://123.56.132.142/wp-content/uploads/2020/08/blog.png)
+![blog](https://s1.ax1x.com/2020/08/25/dcEQzV.png)
 
 点击进入文章详情页
 
-![article](http://123.56.132.142/wp-content/uploads/2020/08/article.png)
+![article](https://s1.ax1x.com/2020/08/25/dcEuin.png)
 
-![article1](http://123.56.132.142/wp-content/uploads/2020/08/article1.png)
+![article1](https://s1.ax1x.com/2020/08/25/dcEEqg.png)
 
 gallery
 
-![gallery](http://123.56.132.142/wp-content/uploads/2020/08/gallery.png)
+![gallery](https://s1.ax1x.com/2020/08/25/dcE8LF.png)
 
 shortCode
 
-![shortCode](http://123.56.132.142/wp-content/uploads/2020/08/shortCode.png)
+![shortCode](https://s1.ax1x.com/2020/08/25/dcEUiR.png)
 
-![shortCode1](http://123.56.132.142/wp-content/uploads/2020/08/shortCode1.png)
+![shortCode1](https://s1.ax1x.com/2020/08/25/dcEaJ1.png)
 
 contact
 
-![contact](http://123.56.132.142/wp-content/uploads/2020/08/contact.png)
+![contact](https://s1.ax1x.com/2020/08/25/dcEMR0.png)
 
 
 
@@ -119,7 +119,7 @@ contact
 
 这个轮播图是Vue-awesome-swiper
 
-![swiper](http://123.56.132.142/wp-content/uploads/2020/08/swiper.png)
+![swiper](https://s1.ax1x.com/2020/08/25/dcEBQK.png)
 
 那么老师这时候问你了，这个东西怎么实现的
 
@@ -235,7 +235,7 @@ Mock.mock('/api/carousels', 'get', carousels)
 
 ### ExploreSiteFullPane
 
-![ExploreSiteFullPane](http://123.56.132.142/wp-content/uploads/2020/08/ExploreSiteFullPane.png)
+![ExploreSiteFullPane](https://s1.ax1x.com/2020/08/25/dcE1MT.png)
 
 这个封装需要复用，所以封装成了一个组件
 
@@ -300,7 +300,7 @@ export default {
 
 ### Nav
 
-![nav](http://123.56.132.142/wp-content/uploads/2020/08/nav.png)
+![nav](https://s1.ax1x.com/2020/08/25/dcEYdJ.png)
 
 跟刚才那个一样，这个也是根据路由动态显示不一样的字，需要父组件传递过来值，但这个是根节点传过来的……
 
@@ -332,7 +332,7 @@ App.vue
 
 sidebar弹出效果
 
-![sidebar](http://123.56.132.142/wp-content/uploads/2020/08/sidebar.png)
+![sidebar](https://s1.ax1x.com/2020/08/25/dcEdRx.png)
 
 这个是element-ui的一个抽屉效果
 
@@ -491,11 +491,11 @@ drawer变量控制sidebar是否显示，actions里是异步的函数，所以用
 
 ### About
 
-![about-avatar](http://123.56.132.142/wp-content/uploads/2020/08/about-avatar.png)
+![about-avatar](https://s1.ax1x.com/2020/08/25/dcEeaj.png)
 
 点击这几个小人头下面会弹出来动画
 
-![about-avatar2](http://123.56.132.142/wp-content/uploads/2020/08/about-avatar2.png)
+![about-avatar2](https://s1.ax1x.com/2020/08/25/dcEZZQ.png)
 
 About.vue
 
@@ -749,9 +749,9 @@ showContent (id) {
 
 文章详情页这里，下面那个留言板，也是一个抽出来的组件，因为Contact页面也得用
 
-![article-message](http://123.56.132.142/wp-content/uploads/2020/08/article-message.png)
+![article-message](https://s1.ax1x.com/2020/08/25/dcEixf.png)
 
-![contact-message](http://123.56.132.142/wp-content/uploads/2020/08/contact-message.png)
+![contact-message](https://s1.ax1x.com/2020/08/25/dcEKGq.png)
 
 他们按钮的文字不一样，那么这时就用到了作用域插槽
 
@@ -934,7 +934,7 @@ methods: {
 
 ### SocialLink
 
-![socialLink](http://123.56.132.142/wp-content/uploads/2020/08/socialLink.png)
+![socialLink](https://s1.ax1x.com/2020/08/25/dcEwz6.png)
 
 这是父向子传值
 
@@ -974,7 +974,7 @@ export default {
 
 行了差不多了，如果还有问题的话，加我WeChat:  **Macsen_Chu**，或者关注我的公众号听我~~吹牛逼~~写一些技术方面的文章
 
-![WeChat](http://123.56.132.142/wp-content/uploads/2020/08/WeChat.png)
+![WeChat](https://s1.ax1x.com/2020/08/25/dcEDsO.png)
 
 
 
