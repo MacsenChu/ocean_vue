@@ -974,8 +974,7 @@ export default {
 
 行了差不多了，如果还有问题的话，加我WeChat:  **Macsen_Chu**，或者关注我的公众号听我~~吹牛逼~~写一些技术方面的文章
 
-![WeChat](/https://github.com/MacsenChu/ocean_vue/blob/master/image/WeChat.png)
-
+![WeChat](https://github.com/MacsenChu/ocean_vue/blob/master/image/WeChat.png)
 
 
 
